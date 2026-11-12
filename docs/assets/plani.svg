@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 94" role="img" aria-labelledby="plani-title plani-desc">
+<title id="plani-title">Plani, o mascote do Planner</title><desc id="plani-desc">Robô azul claro, visor escuro, olhos alinhados, anteninha e mãozinhas livres. A mão direita acena.</desc>
+<defs>
+  <radialGradient id="plani-shell" cx="34%" cy="23%" r="90%"><stop stop-color="#C2E7FF"/><stop offset=".48" stop-color="#A8C7FA"/><stop offset="1" stop-color="#85B0E6"/></radialGradient>
+  <linearGradient id="plani-glove" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#F8FDFF"/><stop offset="1" stop-color="#A8CEE3"/></linearGradient>
+  <filter id="soft-shadow" x="-30%" y="-40%" width="170%" height="190%"><feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#020B1A" flood-opacity=".3"/></filter>
+  <style>
+    .p-eye{animation:plani-blink 6.5s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+    .p-gaze{animation:plani-look 9s ease-in-out infinite}
+    .p-left-hand{animation:plani-rest 7s ease-in-out infinite;transform-box:view-box;transform-origin:41px 48px}
+    .p-right-hand{animation:plani-wave 5.8s ease-in-out infinite;transform-box:view-box;transform-origin:115px 33px}
+    .p-antenna{animation:plani-glow 5s ease-in-out infinite}
+    @keyframes plani-blink{0%,37%,39%,76%,78%,100%{transform:scaleY(1)}38%,77%{transform:scaleY(.12)}}
+    @keyframes plani-look{0%,18%,34%,63%,83%,100%{transform:translateX(0)}24%{transform:translateX(-1.15px)}70%{transform:translateX(1.15px)}}
+    @keyframes plani-rest{0%,50%,100%{rotate:0deg}59%{rotate:-3deg}69%{rotate:2deg}}
+    @keyframes plani-wave{0%,38%,82%,100%{rotate:0deg}48%{rotate:13deg}56%{rotate:-13deg}65%{rotate:9deg}73%{rotate:-6deg}}
+    @keyframes plani-glow{0%,100%{opacity:.8}50%{opacity:1}}
+    @media(prefers-reduced-motion:reduce){.p-eye,.p-gaze,.p-left-hand,.p-right-hand,.p-antenna{animation:none!important}}
+  </style>
+</defs>
+<g transform="translate(10 14)">
+  <!-- Bracinhos livres, sem barra na landing -->
+  <path d="M45 26 Q35 28 31 34" fill="none" stroke="#305B73" stroke-width="5.2" stroke-linecap="round"/>
+  <path d="M45 26 Q35 28 31 34" fill="none" stroke="#87DDEB" stroke-width="3.2" stroke-linecap="round"/>
+  <circle cx="45" cy="26" r="2.8" fill="#305B73"/><circle cx="45" cy="26" r="1.4" fill="#EAFBFF"/>
+  <path d="M95 26 Q102 27 105 19" fill="none" stroke="#305B73" stroke-width="5.2" stroke-linecap="round"/>
+  <path d="M95 26 Q102 27 105 19" fill="none" stroke="#87DDEB" stroke-width="3.2" stroke-linecap="round"/>
+  <circle cx="95" cy="26" r="2.8" fill="#305B73"/><circle cx="95" cy="26" r="1.4" fill="#EAFBFF"/>
+  <!-- Cabeça quadrada arredondada: o próprio botão inteiro forma o corpo -->
+  <g filter="url(#soft-shadow)">
+    <rect x="44" y="0" width="52" height="52" rx="16" fill="url(#plani-shell)" stroke="#406B95" stroke-width="1.3"/>
+    <rect x="45.1" y="1" width="49.8" height="50" rx="15" fill="none" stroke="#EAFDFF" stroke-opacity=".44" stroke-width="1.1"/>
+    <path d="M70 5 V10" stroke="#EAFDFF" stroke-width="1.9" stroke-linecap="round"/>
+    <circle cx="70" cy="4.5" r="3.1" fill="#EAFDFF"/><circle class="p-antenna" cx="70" cy="4.5" r="2.05" fill="#8EEAF5"/>
+    <rect x="48.5" y="10" width="43" height="32" rx="12" fill="#102A4C"/>
+    <rect x="50" y="11.5" width="40" height="29" rx="10.5" fill="#8EEAF5"/>
+    <rect x="51.4" y="12.9" width="37.2" height="26.2" rx="9.4" fill="#10243C"/>
+    <g class="p-gaze"><rect class="p-eye" x="57.7" y="19.9" width="6.6" height="8.2" rx="3.1" fill="#EAFDFF"/>
+    <rect class="p-eye" x="75.7" y="19.9" width="6.6" height="8.2" rx="3.1" fill="#EAFDFF"/></g>
+    <path d="M65.5 31.2 Q70 35.7 74.5 31.2" fill="none" stroke="#8EEAF5" stroke-width="1.7" stroke-linecap="round"/>
+    <circle cx="63" cy="45.5" r="1.2" fill="#EAFDFF" opacity=".5"/><circle cx="70" cy="45.5" r="1.2" fill="#EAFDFF" opacity=".5"/><circle cx="77" cy="45.5" r="1.2" fill="#EAFDFF" opacity=".5"/>
+  </g>
+  <!-- Mão esquerda descansando, cinco dedos individualizados e polegar -->
+  <g class="p-left-hand">
+    <g transform="translate(31 34) rotate(5) scale(.92)" stroke-linejoin="round" stroke-linecap="round">
+      <g fill="none" stroke="#305B73" stroke-width="4.3">
+        <path d="M-5 6 Q-7 10 -8 16"/><path d="M-2 6 Q-2 12 -3 17"/><path d="M1.6 6 Q3 11 3 15"/><path d="M4.7 5 Q8 9 8 13"/><path d="M-4.3 3.6 Q-9 6.4 -10.6 11"/>
+      </g>
+      <g fill="none" stroke="#EAFBFF" stroke-width="3">
+        <path d="M-5 6 Q-7 10 -8 16"/><path d="M-2 6 Q-2 12 -3 17"/><path d="M1.6 6 Q3 11 3 15"/><path d="M4.7 5 Q8 9 8 13"/><path d="M-4.3 3.6 Q-9 6.4 -10.6 11"/>
+      </g>
+      <path d="M-3.2-1 C-5.8.5-6.6 3.3-6 6.8 C-5.4 9.2 4.4 9.4 5.9 6.7 C6.5 3.2 5.2.5 3.1-1Z" fill="url(#plani-glove)" stroke="#305B73" stroke-width="1.25"/>
+      <path d="M-2.7 1.2Q.4 0 2.7 1.8" fill="none" stroke="#fff" stroke-width="1"/>
+    </g>
+  </g>
+  <!-- Luva direita acenando, aberta e sem corrimão -->
+  <g class="p-right-hand"><g transform="translate(105 19) rotate(175) scale(.82)" stroke-linejoin="round" stroke-linecap="round">
+    <g fill="none" stroke="#305B73" stroke-width="4.3">
+      <path d="M-5 6 Q-7 10 -8 16"/><path d="M-2 6 Q-2 12 -3 17"/><path d="M1.6 6 Q3 11 3 15"/><path d="M4.7 5 Q8 9 8 13"/><path d="M-4.3 3.6 Q-9 6.4 -10.6 11"/>
+    </g><g fill="none" stroke="#EAFBFF" stroke-width="3">
+      <path d="M-5 6 Q-7 10 -8 16"/><path d="M-2 6 Q-2 12 -3 17"/><path d="M1.6 6 Q3 11 3 15"/><path d="M4.7 5 Q8 9 8 13"/><path d="M-4.3 3.6 Q-9 6.4 -10.6 11"/>
+    </g>
+    <path d="M-3.2-1 C-5.8.5-6.6 3.3-6 6.8 C-5.4 9.2 4.4 9.4 5.9 6.7 C6.5 3.2 5.2.5 3.1-1Z" fill="url(#plani-glove)" stroke="#305B73" stroke-width="1.25"/>
+    <path d="M-2.7 1.2Q.4 0 2.7 1.8" fill="none" stroke="#fff" stroke-width="1"/>
+  </g></g>
+</g>
+</svg>
